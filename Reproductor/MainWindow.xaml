@@ -1,0 +1,20 @@
+﻿<Window x:Class="Reproductor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reproductor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="178" Width="447" IsEnabled="False">
+    <Grid>
+        <TextBox x:Name="txtRutaArchivo" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="325"/>
+        <Button x:Name="btnExaminar" Content="Examinar" HorizontalAlignment="Left" Margin="340,13,0,0" VerticalAlignment="Top" Width="78" Click="BtnExaminar_Click"/>
+        <Button x:Name="btnReproducir" Content="Reproducir" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnPausa" Content="Pausa" HorizontalAlignment="Left" Margin="136,53,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnDetener" Content="Detener" HorizontalAlignment="Left" Margin="260,53,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock x:Name="lblTiempoActual" HorizontalAlignment="Left" Margin="10,92,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblTiempoTotal" HorizontalAlignment="Left" Margin="380,92,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top"/>
+        <Slider x:Name="sldTiempo" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Width="419"/>
+
+    </Grid>
+</Window>
